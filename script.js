@@ -1,6 +1,6 @@
 function showTime() {
-      const now = new Date();
-      document.getElementById("time").textContent = now.toLocaleTimeString();
+      const now = Date.now(); // gives time in milliseconds since 1970
+      document.getElementById("time").textContent = now;
     }
-    showTime(); // show immediately
-    setInterval(showTime, 1000); // update every second
+    showTime();
+    setInterval(showTime, 1); // update every 1 millisecond
