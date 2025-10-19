@@ -1,0 +1,281 @@
+body{
+    background: rgba(37, 117, 91, 0.568);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.profile_card{
+    width: 60%;
+    margin:8% auto;
+    padding: 0%;
+    background: rgba(7, 104, 71, 0.568);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.container1{
+    /* background: rgba(227, 245, 239, 0.568); */
+    width: fit-content;
+    display: flex;
+    height:auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 0;
+    padding: 0;
+}
+.container1 .profile_image{
+    width: 50%;
+    border-radius: 50%;
+    height: 40%;
+    /* background-color: blueviolet; */
+    padding: 0;
+
+}
+.container1 .profile_image img{
+    width: 100%;
+    height: 100%;
+    min-width: 90%;
+    max-width: 100%;
+    border-radius: 50%;
+    padding: 0;
+}
+.title{
+    padding: 0;
+    font-weight: bold;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    /* background: salmon; */
+    padding: 0 10%;
+    color:rgba(251, 252, 251, 0.829) ;
+}
+.title .name{
+    padding: 0;
+    /* background: salmon; */
+    font-size:2em;
+}
+.title .description{
+    /* display: none; */
+    color:rgba(233, 241, 238, 0.788) ;
+}
+.title .location, .time{
+    color:rgba(228, 248, 241, 0.568) ;
+    font-size: x-small;
+}
+.container2{
+    /* background: rgba(227, 245, 239, 0.568); */
+    padding: 2%;
+}
+.container2 .bio{
+    padding: 0%;
+    text-align: left;
+    color:rgba(251, 252, 251, 0.829) ;
+    font-size: medium;
+}
+.container2 .socials{
+    /* background-color: rgb(244, 244, 247); */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+}
+.container2  h3{
+ /* background: darkorchid; */
+ padding:2% 0;
+ margin: 0;
+ font-size: 1.3em;
+ color:rgba(251, 252, 251, 0.829) ;
+}
+.container2 .socials h3{
+ /* background: darkorchid; */
+ padding:2% 0;
+ display: flex;
+ justify-content: left;
+ margin: 0;
+ font-size: 1.3em;
+ color:rgba(251, 252, 251, 0.829) ;
+}
+.container2 .socials ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: left;
+    gap: 2%;
+    padding: 0;
+    margin: 0;
+}
+.container2 .socials ul li{
+    font-size: 1em;
+    padding: 1.5%;
+    border-radius: 50%;
+    background: rgba(11, 161, 111, 0.568);
+    cursor: pointer;
+}
+.container2 .socials ul li a i{
+    font-size: 1.2em;
+    color: rgba(229, 247, 241, 0.568);
+}
+.container2 .interests{
+    /* background: sandybrown; */
+    display: flex;
+    margin-top: 2%;
+    gap: 0%;
+}
+.container2 .interests .hobbies{
+    /* background: wheat; */
+    width: 50%;
+}
+.container2 .interests .hobbies h3{
+    /* background: forestgreen; */
+    text-align: left;
+}
+.container2 .interests .hobbies ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    text-align: left;
+    padding: 0%;
+    margin: 0;
+    /* background: tomato; */
+}
+.container2 .interests .hobbies ul li{
+    list-style: none;
+    background: rgba(11, 161, 111, 0.568);
+    color: rgba(190, 236, 221, 0.925);
+    padding: 3%;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+.container2 .interests .dislikes{
+    /* background: brown; */
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.container2 .interests .dislikes h3{
+    /* background: forestgreen; */
+    text-align: left;
+}
+.container2 .interests .dislikes ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    padding: 2%;
+    margin: 0;
+    /* background: tomato; */
+}
+.container2 .interests .dislikes ul li{
+    list-style: none;
+    background: rgba(11, 161, 111, 0.568);
+    color: rgba(190, 236, 221, 0.925);
+    padding: 3%;
+    font-size: 1em;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+
+/* ========== RESPONSIVENESS ========== */
+
+/* For tablets and medium screens */
+@media (max-width: 992px) {
+  .profile_card {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .container1, .container2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container1 .profile_image {
+    width: 40%;
+    margin: 0 auto 15px;
+  }
+
+  .title {
+    padding: 0;
+    text-align: center;
+  }
+
+  .container2 .socials ul {
+    justify-content: center;
+  }
+.container2 .socials h3{
+ /* background: darkorchid; */
+ display: flex;
+ justify-content: center;
+ 
+}
+  .container2 .interests {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 .interests .hobbies,
+  .container2 .interests .dislikes {
+    width: 90%;
+  }
+
+}
+
+/* For mobile phones and small screens */
+@media (max-width: 600px) {
+  .profile_card {
+    width: 90%;
+    margin: 10% auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container1 .profile_image {
+    width: 60%;
+  }
+
+  .title .name {
+    font-size: 1.5em;
+  }
+
+  .container2 .bio {
+    font-size: 0.95em;
+    text-align: center;
+  }
+
+  .container2 .socials ul {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .container2 .interests .hobbies ul,
+  .container2 .interests .dislikes ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container2 .interests .hobbies ul li{
+    /* gap: 15%; */
+    margin: 5px;
+    /* background: tomato; */
+}
+
+  .container2 .interests .hobbies ul li,
+  .container2 .interests .dislikes ul li {
+    font-size: 0.9em;
+    width: 80%;
+    text-align: center;
+  }
+.container2 h3{
+ /* background: darkorchid; */
+ display: flex;
+ justify-content: center;
+ padding-top: 30px;
+}
+}

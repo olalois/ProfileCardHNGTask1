@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article class="profile_card"  data-testid="test-profile-card">
+        <section class="container1">
+            <figure class="profile_image" data-testid="test-user-image">
+                <img src="./images/professional Headshot 1.jpg" alt="profile image" data-testid="test-user-image">
+            </figure>
+            <span class="title">
+                <header class="name" data-testid="test-user-name">Lois</header>
+                <span class="description" data-testid="test-user-description">Front-End Developer</span>
+                <span class="location" data-testid="test-user-location">Based in Nigeria <span id="time" class="time" data-testid="test-user-time"></span></span>
+            </span>
+        </section>
+        <section class="container2">
+            <p class="bio" data-testid="test-user-bio">
+                I am a front-end developer with a passion for creating beautiful and functional web applications. I have experience working with HTML, CSS, JavaScript, and various front-end frameworks. I enjoy collaborating with designers and back-end developers to bring ideas to life.
+            </p>
+            <div class="socials">
+                <h3>Socials</h3>
+                <ul  data-testid="test-user-social-links"
+>
+                    <li data-testid="test-user-social-instagram">
+                        <a href="https://www.instagram.com/ola_k_lois/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li data-testid="test-user-social-linkedin">
+                        <a href="https://www.linkedin.com/in/olakanmi-lois-0724a1271/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li data-testid="test-user-social-github">
+                        <a href="https://github.com/olalois">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="interests">
+                <div class="hobbies" data-testid="test-user-hobbies">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li data-testid="test-user-hobbies">Reading</li>
+                        <li data-testid="test-user-hobbies">Traveling</li>
+                        <li data-testid="test-user-hobbies">Coding</li>
+                    </ul>
+                </div>
+                <div class="dislikes" data-testid="test-user-dislikes">
+                    <h3>Dislikes</h3>
+                    <ul>
+                        <li data-testid="test-user-dislikes">Spam Emails</li>
+                        <li data-testid="test-user-dislikes">Slow Internet</li>
+                        <li data-testid="test-user-dislikes">Procrastination</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+<script src="script.js"></script>
+</html>
