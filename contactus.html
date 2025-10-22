@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article class="profile_card contactcard"  data-testid="test-contact-page">
+        <section class="container1">
+            <figure class="profile_image" data-testid="test-user-image">
+                <img src="./images/professional Headshot 1.jpg" alt="profile image" data-testid="test-user-image">
+            </figure>
+            <span class="title">
+                <header class="name" data-testid="test-user-name">Lois</header>
+                <span class="description" data-testid="test-user-description">Front-End Developer</span>
+                <span class="location" data-testid="test-user-location">Based in Nigeria <span id="time" class="time" data-testid="test-user-time"></span></span>
+            </span>
+            <nav class="navlinks" data-testid="test-contact-links">
+                <ul>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/about.html"><li>About us</li></a>
+                    <a href="/contactus.html"><li>Contact Us</li></a>
+                </ul>
+            </nav>
+        </section>
+        <section class="container2 formcontent" data-testid="test-contact-section">
+            <p>
+                <span>Get In Touch</span>
+                <span>Open for freelance projects or full-time opportunities</span>
+            </p>
+            <main class="contact-container">
+                <form id="contactForm" novalidate>
+                    <div class="formgroup" data-testid="test-contact-name">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" data-testid="test-contact-name" placeholder="Your full Name" required aria-describedby="error-name">
+                        <p class="error" id="error-name" data-testid="test-contact-error-name"></p>
+                    </div>
+
+                    <div class="formgroup" data-testid="test-contact-email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" data-testid="test-contact-email" placeholder="email" required                aria-describedby="error-email">
+                        <p class="error" id="error-email" data-testid="test-contact-error-email"></p>
+                    </div>
+
+                    <div class="formgroup" data-testid="test-contact-subject">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" data-testid="test-contact-subject" required aria-describedby="error-subject">
+                        <p class="error" id="error-subject" data-testid="test-contact-error-subject"></p>
+                    </div>
+
+                    <div class="formgroup" data-testid="test-contact-message">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" data-testid="test-contact-message" placeholder="speak to me " required              aria-describedby="error-message"></textarea>
+                        <p class="error" id="error-message" data-testid="test-contact-error-email"></p>
+                    </div>
+
+                    <button type="submit" data-testid="test-contact-submit">Send Message</button>
+                    <p class="success" id="success" data-testid="test-contact-success-email"></p>
+                </form>
+
+            </main>
+        </section>
+    </article>
+</body>
+<script src="script.js"></script>
+</html>
